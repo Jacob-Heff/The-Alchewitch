@@ -1,0 +1,404 @@
+rpy monologue none
+# The script of the game goes in this file.
+
+################################################################################
+## Initialization
+################################################################################
+image aether = "images/hud/potions/filled/Bottled Aether.png"
+image affection = "images/hud/potions/filled/Bottled Affection.png"
+image cooling = "images/hud/potions/filled/Bottled Cooling.png"
+image truth = "images/hud/potions/filled/Bottled Truth.png"
+image heating = "images/hud/potions/filled/Bottled Heating.png"
+image light = "images/hud/potions/filled/Bottled Light.png"
+image shadows = "images/hud/potions/filled/Bottled Shadows.png"
+image stone = "images/hud/potions/filled/Bottled Stone.png"
+
+default ttvalue = ""
+default hud_screen = ""
+
+################################################################################
+## Inventory
+################################################################################
+default inventory_list = []
+default aether_num = 0
+default affection_num = 0
+default cooling_num = 0
+default truth_num = 0
+default heating_num = 0
+default light_num = 0
+default shadows_num = 0
+default stone_num = 0
+
+
+label count_inventory:
+    python:
+        for item in inventory_list:
+            if item == "Bottled Aether":
+                aether_num = inventory_list.count("Bottled Aether")
+            elif item == "Bottled Affection":
+                affection_num = inventory_list.count("Bottled Affection")
+            elif item == "Bottled Cooling":
+                cooling_num = inventory_list.count("Bottled Cooling")
+            elif item == "Bottled Truth":
+                truth_num = inventory_list.count("Bottled Truth")
+            elif item == "Bottled Heating":
+                heating_num = inventory_list.count("Bottled Heating")
+            elif item == "Bottled Light":
+                light_num = inventory_list.count("Bottled Light")
+            elif item == "Bottled Shadows":
+                shadows_num = inventory_list.count("Bottled Shadows")
+            elif item == "Bottled Stone":
+                stone_num = inventory_list.count("Bottled Stone")
+    return
+
+label add_to_inventory(item):
+    $ inventory_list.append(item)
+    hide screen inventory
+    call count_inventory
+    show screen inventory
+    return
+
+label remove_from_inventory(item):
+    $ inventory_list.remove(item)
+    hide screen inventory
+    call count_inventory
+    show screen inventory
+    return
+
+################################################################################
+## Game Script
+################################################################################
+# The game starts here.
+label start:
+    scene bg alchemist lab with dissolve
+    show selene wicked grin at selene_bottom
+
+    """
+    You are Selene, THE Alchewitch.
+    You are not like any other witch.
+    You have the power to manipulate the elements.
+    You can bottle them up and use them to your advantage.
+    """
+
+    scene bg forest
+    "The world you live in is in chaos."
+    "A force of darkness is taking over the land."
+    "You must use your powers to stop it."
+
+    jump potion_intro
+
+label potion_intro:
+    nvlChar """
+    You have nine potions at your disposal.
+
+    Each potion has a unique property that can help you in your quest.
+
+    Choose wisely and brew the potions you need.
+
+    The fate of the world is in your hands.
+    """
+
+    scene bg display with dissolve
+
+    show aether at bottle_display
+    nvl clear
+
+    nvlChar """
+    The Potion of Aether:
+
+    Changes the properties of other elements
+
+    Crafted with ___, ___ and ____.
+
+    Use: Throw at an enemy or oject to change or weaken an element within it
+    """
+    nvl clear
+    hide aether
+    
+    show affection at bottle_display
+    nvlChar """
+    The Potion of Affection, AKA The Love Potion:
+    
+    Makes people fall in love with the first person they see
+
+    Crafted with ___, ___ and ____.
+
+    Use: Target must drink the potion, can be poured and mixed with other drinks
+    """
+    nvl clear
+    hide affection
+    
+    show cooling at bottle_display
+    nvlChar """
+    The Potion of Cooling:
+
+    Freezes things and people in place
+
+    Crafted with ___, ___ and ____.
+
+    Use: Throw at an enemy or object to freeze it in place
+    """
+    nvl clear
+    hide cooling
+    
+    show truth at bottle_display
+    nvlChar """
+    The Potion of Truth:
+
+    Makes people tell the truth
+
+    Crafted with ___, ___ and ____.
+
+    Use: Target must drink the potion, can be poured and mixed with other drinks
+    """
+    nvl clear
+    hide truth
+
+    show heating at bottle_display
+    nvlChar """
+    The Potion of Heating:
+
+    Burns things and people
+
+    Crafted with 2 sticks and a stone.
+
+    Use: Throw at an enemy or object to burn it
+    """
+    nvl clear
+    hide heating
+
+    show light at bottle_display
+    nvlChar """
+    The Potion of Light:
+
+    Illuminates dark places
+
+    Crafted with ___, ___ and ____.
+
+    Use: Throw at a dark place to illuminate it
+    """
+    nvl clear
+    hide light
+
+    show shadows at bottle_display
+    nvlChar """
+    The Potion of Shadows:
+
+    Creates darkness
+
+    Crafted with ___, ___ and ____.
+
+    Use: Throw at a lit place to create darkness
+    """
+    nvl clear
+    hide shadows
+
+    show stone at bottle_display
+    nvlChar """
+    The Potion of Stone:
+
+    Turns an object or enemy into stone
+    
+    Crafted with ___, ___ and ____.
+
+    Use: Throw at an enemy or object to turn it into stone
+    """
+    nvl clear
+    hide stone
+
+    jump game_start
+
+label game_start:
+    scene bg alchemist lab with dissolve
+    show selene at selene_bottom
+
+    # The game starts here.
+    # The player starts in their lab
+    # They can choose to brew potions or go out to the world
+    """
+    You are in your lab.
+    You can brew potions here.
+    You can also go out to the world to fight the darkness.
+    """
+
+    # menu:
+    #     "Brew potions":
+    #         jump brew_potions
+    #     "Go out to the world":
+    #         jump world_map
+
+# label world_map:
+#     scene bg world map with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You are in the world map."
+#     "Where would you like to go?"
+
+#     menu:
+#         "Forest":
+#             jump forest
+#         "Cave":
+#             jump cave
+#         "Castle":
+#             jump castle
+#         "Back to lab":
+#             jump game_start
+
+# label forest:
+#     scene bg forest with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You are in the forest."
+#     "You see a dark figure lurking in the shadows."
+
+#     menu:
+#         "Use Potion of Light":
+#             jump forest_light
+#         "Use Potion of Shadows":
+#             jump forest_shadows
+#         "Use Potion of Cooling":
+#             jump forest_cooling
+#         "Back":
+#             jump world_map
+
+# label forest_light:
+#     scene bg forest with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Light."
+#     "The darkness in the forest is dispelled."
+
+#     call remove_from_inventory("Bottled Light")
+
+#     jump forest
+
+# label forest_shadows:
+#     scene bg forest with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Shadows."
+#     "The darkness in the forest deepens."
+
+#     call remove_from_inventory("Bottled Shadows")
+
+#     jump forest
+
+# label forest_cooling:
+#     scene bg forest with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Cooling."
+#     "The dark figure is frozen in place."
+
+#     call remove_from_inventory("Bottled Cooling")
+
+#     jump forest
+
+# label cave:
+#     scene bg cave with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You are in the cave."
+#     "You see a monster blocking your path."
+
+#     menu:
+#         "Use Potion of Heating":
+#             jump cave_heating
+#         "Use Potion of Solidifier":
+#             jump cave_solidifier
+#         "Back":
+#             jump world_map
+
+# label cave_heating:
+#     scene bg cave with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Heating."
+#     "The monster is burned to ashes."
+
+#     call remove_from_inventory("Bottled Heating")
+
+#     jump cave
+
+# label cave_solidifier:
+#     scene bg cave with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Solidifier."
+#     "The monster turns into stone."
+
+#     call remove_from_inventory("Bottled Solidifier")
+
+#     jump cave
+
+# label castle:
+#     scene bg castle with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You are in the castle."
+#     "You see the dark lord waiting for you."
+
+#     menu:
+#         "Use Potion of Aether":
+#             jump castle_aether
+#         "Use Potion of Affection":
+#             jump castle_affection
+#         "Use Potion of Envy":
+#             jump castle_envy
+#         "Back":
+#             jump world_map
+
+# label castle_aether:
+#     scene bg castle with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Aether."
+#     "The dark lord's powers are weakened."
+
+#     call remove_from_inventory("Bottled Aether")
+
+#     jump castle
+
+# label castle_affection:
+#     scene bg castle with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Affection."
+#     "The dark lord falls in love with you."
+
+#     call remove_from_inventory("Bottled Affection")
+
+#     jump castle
+
+# label castle_envy:
+#     scene bg castle with dissolve
+#     show selene at selene_bottom
+#     show screen inventory
+
+#     "You use the Potion of Envy."
+#     "The dark lord becomes envious of you."
+
+#     call remove_from_inventory("Bottled Envy")
+
+#     jump castle
+
+# label end:
+#     scene bg alchemist lab with dissolve
+#     show selene at selene_bottom
+
+#     "You have saved the world from darkness."
+#     "You are the hero of the land."
+#     "You are Selene, THE Alchewitch."
+
+#     return

@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 38: a non-constant keyword argument like 'modal hud_should_be_modal' is not allowed after a python block.
+    modal hud_should_be_modal
+                             ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Jul 31 00:46:03 2024

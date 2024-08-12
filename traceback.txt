@@ -1,0 +1,62 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 316, in script
+    """
+  File "game/script.rpy", line 29, in execute
+    screen hud:
+  File "game/script.rpy", line 29, in keywords
+    screen hud:
+  File "game/script.rpy", line 32, in <module>
+    modal hud_should_be_modal
+NameError: name 'hud_should_be_modal' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 316, in script
+    """
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\heffi\Downloads\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 29, in execute
+    screen hud:
+  File "game/script.rpy", line 29, in keywords
+    screen hud:
+  File "game/script.rpy", line 32, in <module>
+    modal hud_should_be_modal
+NameError: name 'hud_should_be_modal' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+The Alchewitch 1.0
+Wed Jul 31 00:45:01 2024
