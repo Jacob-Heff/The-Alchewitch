@@ -20,15 +20,59 @@ default hud_should_be_modal = True
 
 default trouble = False
 
+default day = 1
+define times = ["morning", "afternoon", "evening", "night"]
+default time = times[0]
+
 define cauldron = "images/lab/cauldron.png"
-image aether = "images/display/Bottled Aether.png"
-image affection = "images/display/Bottled Affection.png"
-image cooling = "images/display/Bottled Cooling.png"
-image heating = "images/display/Bottled Heating.png"
-image light = "images/display/Bottled Light.png"
-image shadows = "images/display/Bottled Shadows.png"
-image stone = "images/display/Bottled Stone.png"
-image truth = "images/display/Bottled Truth.png"
+
+image aether = "images/display/bottled_aether.png"
+image affection = "images/display/bottled_affection.png"
+image cooling = "images/display/bottled_cooling.png"
+image heating = "images/display/bottled_heating.png"
+image light = "images/display/bottled_light.png"
+image shadows = "images/display/bottled_shadows.png"
+image stone = "images/display/bottled_stone.png"
+image truth = "images/display/bottled_truth.png"
+
+define empty_potion_map = {
+    "aether": "images/hud/potions/empty/bottled_aether.png",
+    "affection": "images/hud/potions/empty/bottled_affection.png",
+    "cooling": "images/hud/potions/empty/bottled_cooling.png",
+    "heating": "images/hud/potions/empty/bottled_heating.png",
+    "light": "images/hud/potions/empty/bottled_light.png",
+    "shadows": "images/hud/potions/empty/bottled_shadows.png",
+    "stone": "images/hud/potions/empty/bottled_stone.png",
+    "truth": "images/hud/potions/empty/bottled_truth.png"
+}
+
+label time_advance_and_check:
+    if time == "morning":
+        $ time = times[1]
+    elif time == "afternoon":
+        $ time = times[2]
+    elif time == "evening":
+        $ time = times[3]
+    else:
+        $ time = times[0]
+        $ day += 1
+
+label undo_time:
+    if day == 1:
+        if time == "evening":
+            $ time = times[2]
+        if time == "afternoon":
+            $ time = times[1]
+    else:
+        if time == "evening":
+            $ time = times[2]
+        if time == "afternoon":
+            $ time = times[1]
+        if time == "morning":
+            $ time = times[0]
+            $ day -= 1
+    
+
 
 screen hud:
     tag persistent
@@ -41,18 +85,18 @@ screen hud:
         yalign 0.0
         grid 3 1:
             imagebutton:
-                idle "images/hud/icons/Icon Ingredients Menu.png"
-                hover "images/hud/icons/Icon Ingredients Menu.png"
+                idle "images/hud/icons/icon_ingredients_menu.png"
+                hover "images/hud/icons/icon_ingredients_menu.png"
                 action SetVariable("hud_display", "ingredients"), Show("hud")
                 tooltip "Ingredients"
             imagebutton:
-                idle "images/hud/icons/Icon Map Menu.png"
-                hover "images/hud/icons/Icon Map Menu.png"
+                idle "images/hud/icons/icon_map_menu.png"
+                hover "images/hud/icons/icon_map_menu.png"
                 action Jump("map")
                 tooltip "Map"
             imagebutton:
-                idle "images/hud/icons/Icon Potion Menu.png"
-                hover "images/hud/icons/Icon Potion Menu.png"
+                idle "images/hud/icons/icon_potion_menu.png"
+                hover "images/hud/icons/icon_potion_menu.png"
                 action SetVariable("hud_display", "potions"), Show("hud")
                 tooltip "Potions"
     
@@ -100,86 +144,17 @@ screen hud:
             grid 2 5:
                 textbutton "   X   " action SetVariable("hud_display", ""), Show("hud")
                 text ""
-                if "aether" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Aether.png"
-                            hover "images/hud/potions/empty/Bottled Aether.png"
-                            action NullAction()
-                        text "Bottled Aether | 0":
-                            size 16
-                if "affection" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Affection.png"
-                            hover "images/hud/potions/empty/Bottled Affection.png"
-                            action NullAction()
-                        text "Bottled Affection | 0":
-                            size 16
-                if "cooling" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Cooling.png"
-                            hover "images/hud/potions/empty/Bottled Cooling.png"
-                            action NullAction()
-                        text "Bottled Cooling | 0":
-                            size 16
-                if "heating" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Heating.png"
-                            hover "images/hud/potions/empty/Bottled Heating.png"
-                            action NullAction()
-                        text "Bottled Heating | 0":
-                            size 16
-                if "light" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Light.png"
-                            hover "images/hud/potions/empty/Bottled Light.png"
-                            action NullAction()
-                        text "Bottled Light | 0":
-                            size 16
-                if "shadows" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Shadows.png"
-                            hover "images/hud/potions/empty/Bottled Shadows.png"
-                            action NullAction()
-                        text "Bottled Shadows | 0":
-                            size 16
-                if "stone" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Stone.png"
-                            hover "images/hud/potions/empty/Bottled Stone.png"
-                            action NullAction()
-                        text "Bottled Stone | 0":
-                            size 16
-                if "truth" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Truth.png"
-                            hover "images/hud/potions/empty/Bottled Truth.png"
-                            action NullAction()
-                        text "Bottled Truth | 0":
-                            size 16
+                for potion in empty_potion_map.keys():
+                    if potion in potions_list:
+                        pass
+                    else:
+                        grid 1 2:
+                            imagebutton:
+                                idle empty_potion_map[potion]
+                                hover empty_potion_map[potion]
+                                action NullAction()
+                            text "Bottled " + potion.capitalize() + " | 0":
+                                size 16
 
 
 screen hud_modal:
@@ -193,18 +168,18 @@ screen hud_modal:
         yalign 0.0
         grid 3 1:
             imagebutton:
-                idle "images/hud/icons/Icon Ingredients Menu.png"
-                hover "images/hud/icons/Icon Ingredients Menu.png"
+                idle "images/hud/icons/icon_ingredients_menu.png"
+                hover "images/hud/icons/icon_ingredients_menu.png"
                 action SetVariable("hud_display", "ingredients"), Show("hud")
                 tooltip "Ingredients"
             imagebutton:
-                idle "images/hud/icons/Icon Map Menu.png"
-                hover "images/hud/icons/Icon Map Menu.png"
+                idle "images/hud/icons/icon_map_menu.png"
+                hover "images/hud/icons/icon_map_menu.png"
                 action Jump("map")
                 tooltip "Map"
             imagebutton:
-                idle "images/hud/icons/Icon Potion Menu.png"
-                hover "images/hud/icons/Icon Potion Menu.png"
+                idle "images/hud/icons/icon_potion_menu.png"
+                hover "images/hud/icons/icon_potion_menu.png"
                 action SetVariable("hud_display", "potions"), Show("hud")
                 tooltip "Potions"
     
@@ -252,86 +227,17 @@ screen hud_modal:
             grid 2 5:
                 textbutton "   X   " action SetVariable("hud_display", ""), Show("hud")
                 text ""
-                if "aether" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Aether.png"
-                            hover "images/hud/potions/empty/Bottled Aether.png"
-                            action NullAction()
-                        text "Bottled Aether | 0":
-                            size 16
-                if "affection" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Affection.png"
-                            hover "images/hud/potions/empty/Bottled Affection.png"
-                            action NullAction()
-                        text "Bottled Affection | 0":
-                            size 16
-                if "cooling" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Cooling.png"
-                            hover "images/hud/potions/empty/Bottled Cooling.png"
-                            action NullAction()
-                        text "Bottled Cooling | 0":
-                            size 16
-                if "heating" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Heating.png"
-                            hover "images/hud/potions/empty/Bottled Heating.png"
-                            action NullAction()
-                        text "Bottled Heating | 0":
-                            size 16
-                if "light" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Light.png"
-                            hover "images/hud/potions/empty/Bottled Light.png"
-                            action NullAction()
-                        text "Bottled Light | 0":
-                            size 16
-                if "shadows" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Shadows.png"
-                            hover "images/hud/potions/empty/Bottled Shadows.png"
-                            action NullAction()
-                        text "Bottled Shadows | 0":
-                            size 16
-                if "stone" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Stone.png"
-                            hover "images/hud/potions/empty/Bottled Stone.png"
-                            action NullAction()
-                        text "Bottled Stone | 0":
-                            size 16
-                if "truth" in potions_list:
-                    pass
-                else:
-                    grid 1 2:
-                        imagebutton:
-                            idle "images/hud/potions/empty/Bottled Truth.png"
-                            hover "images/hud/potions/empty/Bottled Truth.png"
-                            action NullAction()
-                        text "Bottled Truth | 0":
-                            size 16
+                for potion in empty_potion_map.keys():
+                    if potion in potions_list:
+                        pass
+                    else:
+                        grid 1 2:
+                            imagebutton:
+                                idle empty_potion_map[potion]
+                                hover empty_potion_map[potion]
+                                action NullAction()
+                            text "Bottled " + potion.capitalize() + " | 0":
+                                size 16
 
 screen lab_clickable:
     imagebutton at cauldron_right:
@@ -353,8 +259,8 @@ screen lab_clickable:
     
 
 label start:
-    scene bg alchemist lab with dissolve
-    show selene wicked grin at selene_bottom_left
+    scene bg_alchemist_lab with dissolve
+    show selene_wicked_grin at selene_bottom_left
     show cauldron at cauldron_right
     show ghost at ghost_left
 
@@ -365,7 +271,7 @@ label start:
     You can bottle them up and use them to your advantage.
     """
 
-    scene bg forest
+    scene bg_forest
     """
     The world you live in is in chaos.
     A force of darkness is taking over the land.
@@ -374,7 +280,10 @@ label start:
     jump potion_intro
 
 label potion_intro:
-    scene bg alchemist lab with dissolve
+    scene bg_alchemist_lab with dissolve
+    show selene_wicked_grin at selene_bottom_left
+    show cauldron at cauldron_right
+    show ghost at ghost_left
     """
     You have nine potions at your disposal.
     Each potion has a unique property that can help you in your quest.
@@ -384,7 +293,7 @@ label potion_intro:
     The fate of the world is in your hands.
     """
 
-    scene bg display with dissolve
+    scene bg_display with dissolve
     show aether at bottle_display
     """
     The Potion of Aether:
@@ -461,21 +370,25 @@ label potion_intro:
 label lab:
     $ _skipping = False
     $ label = "lab"
-    scene bg alchemist lab
+    scene bg_alchemist_lab
     show screen hud_modal
     show screen lab_clickable
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
+    show selene_wicked_grin at selene_bottom_left
     if renpy.get_screen("map"):
         hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
     """
     This is your lab. You can brew potions here.
     Click on the cauldron to start brewing.
     """
 
-
 label map:
-    scene bg map
+    scene bg_map
     show screen map
     if renpy.get_screen("hud"):
         hide screen hud
@@ -484,33 +397,48 @@ label map:
     $ renpy.pause(hard=True)
 
 label woods:
-    chance = renpy.random.randint(1, 10)
+    define chance = renpy.random.randint(1, 10)
     if chance > 5 and chance < 8:
         jump woods_interact
     if chance <= 8:
         jump woods_combat
     $ label = "woods"
-    scene bg mist woods
+    scene bg_mist_woods
     show screen hud_modal
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
+    show selene_wicked_grin at selene_bottom_left
     show screen button_screen
     if renpy.get_screen("map"):
         hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
     """
     This is the mist woods. You can find __ and __ by foraging, 
     you can fight monsters, or you can interact with the woodland creatures that live here.
     """
     $ renpy.pause(hard=True)
 
-label mountain:
+label mountains:
+    define chance = renpy.random.randint(1, 10)
+    if chance > 5 and chance < 8:
+        jump mountains_interact
+    if chance <= 8:
+        jump mountains_combat
     $ label = "mountain"
-    scene bg mountains
+    scene bg_mountains
     show screen hud_modal
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
+    show selene_wicked_grin at selene_bottom_left
     if renpy.get_screen("map"):
         hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
     """
     This is the mountains. You can find __ and __ by mining,
     you can fight monsters, or you can interact with the mountain creatures that live here.

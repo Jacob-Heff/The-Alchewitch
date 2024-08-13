@@ -1678,12 +1678,12 @@ transform rotate_map_button_opp:
 screen map:
     textbutton "BLOODMIST" at rotate_map_button_less:
         text_style "map_button_red"
-        action Jump("mountain")
+        action Jump("mountains")
         xalign 0.55
         yalign 0.225
     textbutton "MOUNTAIN" at rotate_map_button_less:
         text_style "map_button_red"
-        action Jump("mountain")
+        action Jump("mountains")
         xalign 0.6
         yalign 0.28
     textbutton "BLOODMIST" at rotate_map_button_less:
@@ -1760,3 +1760,11 @@ screen button_screen():
                 xalign 0.5
                 yalign 0.5
                 textbutton "Fight" action [ToggleScreen("button_screen"), Jump("mountains_combat")]
+
+screen time_display:
+    grid 1 2:
+        xalign 0.99
+        yalign 0.01
+        spacing 20
+        text f'Day {day}'
+        text time

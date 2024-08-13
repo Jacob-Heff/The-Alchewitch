@@ -1,36 +1,57 @@
-2024-08-12 21:17:18 UTC
+2024-08-12 23:21:56 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.3.24061702
 
-Early init took 1.08s
-Loading error handling took 0.51s
-Loading script took 6.67s
-Loading save slot metadata took 1.53s
-Loading persistent took 0.00s
-Running init code took 0.33s
-Loading analysis data took 0.19s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.53s
-Index archives took 0.00s
-Dump and make backups took 0.24s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.20s
+Early init took 6.70s
+Loading error handling took 2.35s
+Loading script took 12.79s
+Loading save slot metadata took 0.67s
+Loading persistent took 0.05s
+
+File "game/interactions.rpy", line 11: expected statement.
+    chance = renpy.random.randint(1, 11)
+           ^
+
+File "game/interactions.rpy", line 58: expected statement.
+    chance = renpy.random.randint(1, 2)
+           ^
+
+File "game/interactions.rpy", line 73: expected statement.
+    chance = renpy.random.randint(1, 2)
+           ^
+
+File "game/interactions.rpy", line 92: expected statement.
+    chance = renpy.random.randint(1, 11)
+           ^
+
+File "game/interactions.rpy", line 139: expected statement.
+    chance = renpy.random.randint(1, 2)
+           ^
+
+File "game/interactions.rpy", line 154: expected statement.
+    chance = renpy.random.randint(1, 2)
+           ^
+
+File "game/script.rpy", line 34: expected statement.
+    empty_potion_map = {
+                     ^
+        "aether": "images/hud/potions/empty/bottled_aether.png"
+        "affection": "images/hud/potions/empty/bottled_affection.png"
+        "cooling": "images/hud/potions/empty/bottled_cooling.png"
+        "heating": "images/hud/potions/empty/bottled_heating.png"
+        "light": "images/hud/potions/empty/bottled_light.png"
+        "shadows": "images/hud/potions/empty/bottled_shadows.png"
+        "stone": "images/hud/potions/empty/bottled_stone.png"
+        "truth": "images/hud/potions/empty/bottled_truth.png"
+    }
+
+File "game/script.rpy", line 361: expected statement.
+    chance = renpy.random.randint(1, 10)
+           ^
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.01s
-Load screen analysis took 0.17s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.30s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.10s
-Running _start took 0.00s
-Interface start took 1.26s
+Interface start took 15.55s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -41,4 +62,1711 @@ Renderer: b'Intel(R) UHD Graphics 605'
 Version: b'4.6.0 - Build 30.0.101.1660'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(958, 539) drawable=(958, 539)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 334.73s
+Loading error handling took 0.24s
+Loading script took 2.57s
+Loading save slot metadata took 0.11s
+Loading persistent took 0.00s
+
+File "game/interactions.rpy", line 11: expected statement.
+    chance = renpy.random.randint(1, 11)
+           ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 1.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 353.42s
+Loading error handling took 0.15s
+Loading script took 1.48s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 36: invalid syntax
+        "affection": "images/hud/potions/empty/bottled_affection.png"\
+                    ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 1.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 447.01s
+Loading error handling took 0.11s
+Loading script took 0.66s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.18s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.04s
+Running _start took 0.01s
+Interface start took 0.97s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 513.79s
+Loading error handling took 0.10s
+Loading script took 1.00s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.14s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.22s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.18s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.08s
+Prepare screens took 0.27s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Interface start took 0.69s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 990) drawable=(1920, 990)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 981) drawable=(1920, 981)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1900, 971) drawable=(1900, 971)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 732.68s
+Loading error handling took 0.10s
+Loading script took 0.87s
+Loading save slot metadata took 0.19s
+Loading persistent took 0.00s
+Running init code took 0.15s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.10s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.24s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.18s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.14s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.08s
+Prepare screens took 0.30s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 1.17s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 804.79s
+Loading error handling took 0.10s
+Loading script took 0.85s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 0.40802 s.
+Running init code took 0.92s
+Loading analysis data took 0.33s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.41s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.87s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.48s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.31s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.12s
+Prepare screens took 0.48s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.15s
+Running _start took 0.00s
+Interface start took 1.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 817.12s
+Loading error handling took 0.11s
+Loading script took 1.00s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+Running init code took 0.16s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.10s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.23s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.19s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.14s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.09s
+Prepare screens took 0.49s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.10s
+Running _start took 0.01s
+Interface start took 2.83s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 903.49s
+Loading error handling took 0.22s
+Loading script took 3.07s
+Loading save slot metadata took 0.25s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.10s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.27s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.19s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.02s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.08s
+Prepare screens took 0.31s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 1.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 927.08s
+Loading error handling took 0.09s
+Loading script took 0.61s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.16s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Dump and make backups took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.19s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.11s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.92s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 387, in script
+    jump mountain_combat
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 1701, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'mountain_combat'.
+
+While running game code:
+  File "game/script.rpy", line 387, in script
+    jump mountain_combat
+ScriptError: could not find label 'mountain_combat'.
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1012.99s
+Loading error handling took 0.17s
+Loading script took 2.06s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.15s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.32s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.40s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.16s
+Prepare screens took 0.63s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.18s
+Running _start took 0.00s
+Interface start took 2.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1045.64s
+Loading error handling took 0.24s
+Loading script took 3.16s
+Loading save slot metadata took 0.14s
+Loading persistent took 0.00s
+Running init code took 0.20s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.26s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.22s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.09s
+Prepare screens took 0.36s
+Save pyanalysis. took 0.08s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 1.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1129.53s
+Loading error handling took 0.20s
+Loading script took 1.16s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.21s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.36s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.65s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.23s
+Build styles took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.11s
+Prepare screens took 0.55s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.14s
+Running _start took 0.03s
+Interface start took 1.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1188.47s
+Loading error handling took 0.14s
+Loading script took 2.75s
+Loading save slot metadata took 0.15s
+Loading persistent took 0.00s
+Running init code took 0.20s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.46s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.44s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.22s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.16s
+Save screen analysis took 0.13s
+Prepare screens took 0.65s
+Save pyanalysis. took 0.13s
+Save bytecode. took 0.10s
+Running _start took 0.01s
+Interface start took 2.91s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1262.31s
+Loading error handling took 0.24s
+Loading script took 1.63s
+Loading save slot metadata took 0.16s
+Loading persistent took 0.00s
+Running init code took 0.29s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.40s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.66s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.02s
+Cleaning stores took 0.00s
+Init translation took 0.46s
+Build styles took 0.07s
+Load screen analysis took 0.01s
+Analyze screens took 0.17s
+Save screen analysis took 0.34s
+Prepare screens took 0.80s
+Save pyanalysis. took 0.20s
+Save bytecode. took 0.43s
+Running _start took 0.01s
+Interface start took 2.85s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1328.56s
+Loading error handling took 0.28s
+Loading script took 2.45s
+Loading save slot metadata took 0.15s
+Loading persistent took 0.00s
+Running init code took 0.17s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.17s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.35s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.30s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.27s
+Build styles took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.16s
+Prepare screens took 0.56s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.15s
+Running _start took 0.01s
+Interface start took 3.28s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1462.73s
+Loading error handling took 1.59s
+Loading script took 7.27s
+Loading save slot metadata took 3.53s
+Loading persistent took 0.00s
+Running init code took 0.61s
+Loading analysis data took 0.42s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.62s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.99s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.77s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.05s
+Cleaning stores took 0.00s
+Init translation took 0.83s
+Build styles took 0.09s
+Load screen analysis took 0.00s
+Analyze screens took 0.25s
+Save screen analysis took 0.22s
+Prepare screens took 1.06s
+Save pyanalysis. took 0.18s
+Save bytecode. took 0.32s
+Running _start took 0.00s
+Interface start took 2.40s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1508.76s
+Loading error handling took 0.21s
+Loading script took 1.90s
+Loading save slot metadata took 0.32s
+Loading persistent took 0.00s
+Running init code took 0.30s
+Loading analysis data took 0.15s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.28s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.96s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 1.18s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.37s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.22s
+Prepare screens took 1.00s
+Save pyanalysis. took 0.14s
+Save bytecode. took 0.11s
+Running _start took 0.01s
+Interface start took 4.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1526.05s
+Loading error handling took 0.21s
+Loading script took 2.42s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.23s
+Loading analysis data took 0.19s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.24s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.52s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.74s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.76s
+Build styles took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.21s
+Prepare screens took 1.35s
+Save pyanalysis. took 0.20s
+Save bytecode. took 0.14s
+Running _start took 0.03s
+Interface start took 2.42s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1709.75s
+Loading error handling took 1.32s
+Loading script took 1.68s
+Loading save slot metadata took 0.25s
+Loading persistent took 0.00s
+Running init code took 0.28s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.22s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.82s
+Cleaning cache took 0.06s
+Making clean stores took 0.01s
+Initial gc took 1.16s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.33s
+Build styles took 0.03s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.32s
+Prepare screens took 0.74s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.13s
+Running _start took 0.05s
+Interface start took 3.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1722.30s
+Loading error handling took 0.17s
+Loading script took 1.85s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+Running init code took 0.36s
+Loading analysis data took 0.14s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.41s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.39s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.27s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.17s
+Prepare screens took 0.57s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.14s
+Running _start took 0.00s
+Interface start took 1.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1731.04s
+Loading error handling took 0.11s
+Loading script took 1.03s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.13s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.31s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.31s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.39s
+Build styles took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.17s
+Prepare screens took 0.45s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 1.66s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1739.03s
+Loading error handling took 0.23s
+Loading script took 0.96s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+
+File "game/interactions.rpy", line 167: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    if renpy.get_screen("map"):
+    ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 1.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3262.26s
+Loading error handling took 1.20s
+Loading script took 14.48s
+Loading save slot metadata took 1.94s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 1.61532 s.
+ - Init at renpy/common/00library.rpy:447 took 0.33305 s.
+Running init code took 2.34s
+Loading analysis data took 0.28s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.56s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.47s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.47s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.02s
+Cleaning stores took 0.00s
+Init translation took 0.48s
+Build styles took 0.04s
+Load screen analysis took 0.03s
+Analyze screens took 0.08s
+Save screen analysis took 0.13s
+Prepare screens took 0.68s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.12s
+Running _start took 0.01s
+Interface start took 3.01s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3292.60s
+Loading error handling took 0.14s
+Loading script took 1.19s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.00s
+Running init code took 0.25s
+Loading analysis data took 0.18s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.21s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.44s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.46s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.23s
+Build styles took 0.02s
+Load screen analysis took 0.01s
+Analyze screens took 0.07s
+Save screen analysis took 0.25s
+Prepare screens took 0.90s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.01s
+Interface start took 1.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3380.26s
+Loading error handling took 4.88s
+Loading script took 24.20s
+Loading save slot metadata took 0.37s
+Loading persistent took 0.00s
+Running init code took 0.36s
+Loading analysis data took 0.43s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.60s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 1.20s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.31s
+Build styles took 0.02s
+Load screen analysis took 0.02s
+Analyze screens took 0.08s
+Save screen analysis took 0.16s
+Prepare screens took 0.51s
+Save pyanalysis. took 0.20s
+Save bytecode. took 0.15s
+Running _start took 0.03s
+Interface start took 4.38s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4210.70s
+Loading error handling took 0.13s
+Loading script took 1.52s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+Running init code took 0.12s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.18s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.27s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.21s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.08s
+Prepare screens took 0.39s
+Save pyanalysis. took 0.12s
+Save bytecode. took 0.17s
+Running _start took 0.01s
+Interface start took 2.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [Rollback(), UndoDay()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [Rollback(), UndoDay()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [Rollback(), UndoDay()]
+NameError: name 'UndoDay' is not defined
+
+While running game code:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [Rollback(), UndoDay()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [Rollback(), UndoDay()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [Rollback(), UndoDay()]
+NameError: name 'UndoDay' is not defined
+Resetting cache.
+Early init took 4431.50s
+Loading error handling took 1.64s
+Loading script took 3.49s
+Loading save slot metadata took 0.33s
+Loading persistent took 0.00s
+Running init code took 0.21s
+Loading analysis data took 0.13s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.37s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.25s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.26s
+Build styles took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.15s
+Prepare screens took 0.54s
+Save pyanalysis. took 0.12s
+Save bytecode. took 0.15s
+Running _start took 0.01s
+Interface start took 2.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+NameError: name 'call' is not defined
+
+While running game code:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+NameError: name 'call' is not defined
+Resetting cache.
+Early init took 4554.89s
+Loading error handling took 0.35s
+Loading script took 2.30s
+Loading save slot metadata took 0.13s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.30s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.20s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.05s
+Save screen analysis took 0.16s
+Prepare screens took 0.28s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.06s
+Running _start took 0.01s
+Interface start took 2.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+NameError: name 'call' is not defined
+
+While running game code:
+  File "game/interactions.rpy", line 208, in script
+    "You are walking through the mountains and happen upon a mountain goat."
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 240, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 245, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 247, in execute
+    hbox:
+  File "game/screens.rpy", line 253, in execute
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in keywords
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+  File "game/screens.rpy", line 253, in <module>
+    textbutton _("Back") action [call("undo_day"), Rollback()]
+NameError: name 'call' is not defined
+Resetting cache.
+Early init took 4599.63s
+Loading error handling took 0.31s
+Loading script took 3.16s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.00s
+Running init code took 0.22s
+Loading analysis data took 0.23s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.37s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.80s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.37s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.29s
+Build styles took 0.12s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.13s
+Prepare screens took 0.68s
+Save pyanalysis. took 0.15s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 3.44s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4616.88s
+Loading error handling took 0.12s
+Loading script took 1.72s
+Loading save slot metadata took 0.18s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.31s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.22s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.21s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.09s
+Prepare screens took 0.43s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.26s
+Running _start took 0.00s
+Interface start took 15.85s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4775.87s
+Loading error handling took 0.30s
+Loading script took 5.49s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.29s
+Loading analysis data took 0.27s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.23s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.50s
+Cleaning cache took 0.00s
+Making clean stores took 0.01s
+Initial gc took 0.53s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.10s
+Cleaning stores took 0.00s
+Init translation took 0.32s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.05s
+Save screen analysis took 0.17s
+Prepare screens took 0.55s
+Save pyanalysis. took 2.77s
+Save bytecode. took 0.47s
+Running _start took 0.03s
+Interface start took 5.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4812.74s
+Loading error handling took 0.55s
+Loading script took 7.35s
+Loading save slot metadata took 0.39s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 0.49199 s.
+Running init code took 0.68s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.22s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.70s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.27s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.34s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.09s
+Prepare screens took 0.41s
+Save pyanalysis. took 0.15s
+Save bytecode. took 0.17s
+Running _start took 0.01s
+Interface start took 11.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1760, 990) drawable=(1760, 990)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.05s
+Load screen analysis took 0.61s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.05s
+
+Full traceback:
+  File "game/interactions.rpy", line 210, in script call
+    call time_advance_and_check
+  File "game/script.rpy", line 385, in script
+    """
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\heffi\OneDrive\Desktop\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 77, in execute
+    screen hud:
+  File "game/script.rpy", line 77, in execute
+    screen hud:
+  File "game/script.rpy", line 137, in execute
+    if hud_display == "potions":
+  File "game/script.rpy", line 138, in execute
+    frame:
+  File "game/script.rpy", line 144, in execute
+    grid 2 5:
+  File "game/script.rpy", line 147, in execute
+    for potion in empty_potion_map.keys():
+  File "game/script.rpy", line 148, in execute
+    if poition in potions_list:
+  File "game/script.rpy", line 148, in <module>
+    if poition in potions_list:
+NameError: name 'poition' is not defined
+
+While running game code:
+  File "game/interactions.rpy", line 210, in script call
+    call time_advance_and_check
+  File "game/script.rpy", line 385, in script
+    """
+  File "game/script.rpy", line 77, in execute
+    screen hud:
+  File "game/script.rpy", line 77, in execute
+    screen hud:
+  File "game/script.rpy", line 137, in execute
+    if hud_display == "potions":
+  File "game/script.rpy", line 138, in execute
+    frame:
+  File "game/script.rpy", line 144, in execute
+    grid 2 5:
+  File "game/script.rpy", line 147, in execute
+    for potion in empty_potion_map.keys():
+  File "game/script.rpy", line 148, in execute
+    if poition in potions_list:
+  File "game/script.rpy", line 148, in <module>
+    if poition in potions_list:
+NameError: name 'poition' is not defined
+Resetting cache.
+Early init took 5197.52s
+Loading error handling took 1.09s
+Loading script took 5.35s
+Loading save slot metadata took 0.24s
+Loading persistent took 0.00s
+Running init code took 0.36s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.15s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\heffi\\AppData\\Roaming/RenPy/backups\\The Alchewitch':
+Dump and make backups took 0.32s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.34s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.05s
+Cleaning stores took 0.00s
+Init translation took 0.18s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.08s
+Prepare screens took 0.33s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.08s
+Running _start took 0.01s
+Interface start took 2.99s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics 605'
+Version: b'4.6.0 - Build 30.0.101.1660'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
 Maximum texture size: 4096x4096

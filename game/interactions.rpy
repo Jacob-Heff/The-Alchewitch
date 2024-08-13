@@ -1,14 +1,23 @@
 label woods_forage:
+    if renpy.get_screen("map"):
+        hide screen map
     $ label = "woods_forage"
-    scene bg mist woods
+    scene bg_mist_woods
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
+    show selene_wicked_grin at selene_bottom_left
     show screen button_screen
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
 
     "You are foraging in the woods.
     Click to continue..."
-    chance = renpy.random.randint(1, 11)
+    define chance = renpy.random.randint(1, 11)
     if chance == 1:
         "You find a few herbs and mushrooms."
         $ add_to_ingredients("herbs", 3)
@@ -47,49 +56,73 @@ label woods_forage:
         $ add_to_ingredients("nuts", 5)
     if chance == 11:
         "You find nothing."
+    call time_advance_and_check
     jump woods
 
 label woods_interact:
     $ label = "woods_interact"
-    scene bg mist woods
+    scene bg_mist_woods
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
-    chance = renpy.random.randint(1, 2)
+    show selene_wicked_grin at selene_bottom_left
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
+    define chance = renpy.random.randint(1, 2)
     if chance == 1:
         "You are walking through the forest and happen upon a woods nymph."
         show wood nymph at right
     if chance == 2:
         "You are walking through the forest and happen upon a deer."
         show deer at right
+    call time_advance_and_check
     jump woods
 
 label woods_combat:
     $ label = "woods_combat"
-    scene bg mist woods
+    scene bg_mist_woods
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
-    chance = renpy.random.randint(1, 2)
+    show selene_wicked_grin at selene_bottom_left
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
+    define chance = renpy.random.randint(1, 2)
     if chance == 1:
         "You are walking through the forest and happen upon a wolf."
         show wolf at right
     if chance == 2:
         "You are walking through the forest and happen upon a bear."
         show bear at right
+    call time_advance_and_check
     jump woods
 
 label mountains_forage:
     $ label = "mountains_forage"
-    scene bg mist mountains
+    scene bg_mountains
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
+    show selene_wicked_grin at selene_bottom_left
     show screen button_screen
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
 
     "You are foraging in the mountains.
     Click to continue..."
-    chance = renpy.random.randint(1, 11)
+    define chance = renpy.random.randint(1, 11)
     if chance == 1:
         "You find a few herbs and mushrooms."
         $ add_to_ingredients("herbs", 3)
@@ -128,34 +161,51 @@ label mountains_forage:
         $ add_to_ingredients("nuts", 5)
     if chance == 11:
         "You find nothing."
+    call time_advance_and_check
     jump mountains
 
 label mountains_interact:
     $ label = "mountains_interact"
-    scene bg mist mountains
+    scene bg_mountains
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
-    chance = renpy.random.randint(1, 2)
+    show selene_wicked_grin at selene_bottom_left
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
+    define chance = renpy.random.randint(1, 2)
     if chance == 1:
         "You are walking through the mountains and happen upon a mountain goat."
         show mountain goat at right
     if chance == 2:
         "You are walking through the mountains and happen upon a mountain lion."
         show mountain lion at right
+    call time_advance_and_check
     jump mountains
 
 label mountains_combat:
     $ label = "mountains_combat"
-    scene bg mist mountains
+    scene bg_mountains
     show screen hud
     show ghost at ghost_left
-    show selene wicked grin at selene_bottom_left
-    chance = renpy.random.randint(1, 2)
+    show selene_wicked_grin at selene_bottom_left
+    if renpy.get_screen("map"):
+        hide screen map
+    if renpy.get_screen("time_display"):
+        hide screen time_display
+        show screen time_display
+    else:
+        show screen time_display
+    define chance = renpy.random.randint(1, 2)
     if chance == 1:
         "You are walking through the mountains and happen upon a mountain lion."
         show mountain lion at right
     if chance == 2:
         "You are walking through the mountains and happen upon a mountain goat."
         show mountain goat at right
+    call time_advance_and_check
     jump mountains
